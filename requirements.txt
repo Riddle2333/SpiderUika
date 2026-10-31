@@ -1,0 +1,13 @@
+# --- HTTP 请求 ---
+requests>=2.31
+
+# 依赖外部 ffmpeg
+# 必须先装系统级 ffmpeg：
+# conda install -c conda-forge ffmpeg
+pydub>=0.25.1
+
+# --- Python 3.13+ 的 audioop 兼容层 ---
+# PEP 594 在 Python 3.13 移除了标准库 audioop，
+# pydub 的部分操作（重采样、混音、转声道）需要它。
+# 3.12 及以下自带 audioop，不需要安装。
+audioop-lts>=0.2.2; python_version >= "3.13"
