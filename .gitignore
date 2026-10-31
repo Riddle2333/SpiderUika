@@ -1,0 +1,27 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+
+# ===== 音频文件（体积大，训练数据不该进仓库）=====
+*.wav
+*.m4a
+*.mp3
+*.flac
+
+
+# ===== 抓取的 / 生成的数据 =====
+character-voices.json
+failed.json
+*.list
+logs/
+
+# ===== 系统垃圾 =====
+Thumbs.db
+.DS_Store
