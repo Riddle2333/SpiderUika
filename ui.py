@@ -1,15 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-SpiderUika 图形界面（tkinter）
-
-用法：
-    python ui.py
-
-设计要点：
-  1. 爬虫跑在子线程，界面不卡
-  2. 子线程通过 queue 把日志/进度传回主线程，只有主线程能碰控件
-  3. 停止按钮用 threading.Event，爬虫循环里检查
-"""
 
 import os
 import queue
